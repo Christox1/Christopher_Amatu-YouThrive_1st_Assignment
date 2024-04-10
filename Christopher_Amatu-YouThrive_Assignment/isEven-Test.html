@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Even Number Checker</title>
+</head>
+<body>
+    <h1>Even Number Checker</h1>
+    <label for="inputNumber">Enter a number:</label>
+    <input type="number" id="inputNumber" placeholder="Enter number"><br><br>
+    
+    <button onclick="testIsEven()">Check if Even</button><br><br>
+    
+    <p id="output"></p>
+
+    <script>
+        // Function to check if a number is even
+        function isEven(num) {
+            return num % 2 === 0;
+        }
+        
+        function testIsEven() {
+            const inputNumber = document.getElementById("inputNumber").value;
+            
+            const result = isEven(inputNumber);
+            
+            if (result) {
+                document.getElementById("output").innerHTML = "The number is even.";
+            } else {
+                document.getElementById("output").innerHTML = "The number is not even.";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+body {
+    background-color: #add8e6; /* Light blue background color */
+}
+
+h1 {
+    text-align: center; /* Center-align heading text */
+}
+
+ul {
+    list-style-type: none; /* Remove default bullet points */
+}
+
+li {
+    color: green; /* Green font color for list items */
+    font-size: 18px; /* Font size of list items */
+}
+
+img {
+    border: 2px solid black; /* Border around images */
+}
